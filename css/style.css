@@ -113,14 +113,14 @@ html,body {
   display: flex;
   position: fixed;
   top:0;
-  height: 10%;
+  height: 5%;
   left: 0%;
   text-transform: uppercase;
   width: 100%;
-  background: rgb(191, 148, 219);
+  background: #fff;
   padding: 0.5%;
   z-index: 900;
-  justify-content:flex-end;
+  justify-content:center;
   align-items: center;
 }
 .menu ul li{
@@ -129,10 +129,10 @@ html,body {
 .menu a{
    margin: 20px;
   text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 .menu a:hover{
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
 }
 /* ***********************************************************zone 1************************************* */
 .grid-zone-1 {
@@ -394,7 +394,7 @@ text-justify: inter-word;
 display: flex;
  width: 100%;
  margin-bottom: 25%;
- justify-content: space-evenly;
+ justify-content: space-around;
 
 }
 
@@ -403,7 +403,7 @@ label,input {
 
 }
 .contact {
-   min-width: 80%;
+   min-width: 50%;
 	width: calc((800px - 100%) * 1000);
   max-width: 100%; 
 
