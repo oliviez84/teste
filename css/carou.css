@@ -1,0 +1,93 @@
+
+
+:root {
+    --font-titre:'Raleway', sans-serif;
+    --bg-slide:#868686;
+    --tex-titre:#868686;
+}
+
+
+.item {
+    /* margin: 10% 2%; */
+/* background-color: #fff; */
+/* box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a; */
+transition: transform 0.3s;
+transform: translate3d(0,-1px,0);
+ 
+}
+/* .item:hover {
+    transform: translate3d(0,-10px,0);
+} */
+.item img {
+    display: block;
+    width: 90%;
+  
+}
+
+.item__body {
+    padding: 5%;
+    /* background: #242222; */
+    background-color: var(--bg-slide);  
+      
+}
+.item__title {
+    font-size: 1.2rem;
+    /* margin-bottom: 5%; */
+    font-weight: bold;
+    color: #fff;
+}
+.item__description {
+    color: #fff;
+    font-size: 1rem;   
+}
+.item{
+    position: relative;
+  
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+.carousel__container {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s;
+    transform: translate3d(0,0,0);
+}
+
+.carousel__item {
+     width: 100%;
+  
+    }
+.carousel__item .mokeup{
+     width: 100%;
+    
+     background: red;
+    }
+
+
+.carousel__next, .carousel__prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff url(fd.svg) center center no-repeat;
+    background-size: 30px 30px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -10px;
+    right: 10px;    
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;    
+}
+.carousel__next :hover,.carousel__prev :hover {
+    transform: scale(1.2);
+}
+.carousel__prev {
+    background-image: url(fg.svg);
+    right: auto;
+    left: 10px;    
+}
+.carousel__prev--hidden , .carousel__next--hidden{
+    opacity: 0;
+}
