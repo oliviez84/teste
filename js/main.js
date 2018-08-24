@@ -1,58 +1,69 @@
-
 $(document).ready(function(){
 
-    box.init()
-   
-        $('.menu a').click(function(e){
-            e.preventDefault() 
-            var $link=$(this).attr('href')
-            pos = $($link).offset()
-            var scol= pos.top - 50
-        
-             $('body,html').animate({scrollTop:scol},600)
-           
+
+    $('.owl-carousel').owlCarousel({
+    
+        items:2,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        // margin:30,
+        // stagePadding:30,
+        autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout:5000,
+        loop: true,
+        pagination: true,
+        dots: true,
+        // smartSpeed:450,
+        nav: false,
+       points: true,
+       dotsEach: true
+    });
+
+    $(window).scroll(function(e){
+        var scrolltop = $(this).scrollTop()
+
+       if(scrolltop > 99 ){
+           $('.menu').addClass('menutop')
+           $('.menu2').css('display','flex')
+       }else {
+        $('.menu').removeClass('menutop')
+        $('.menu2').css('display','none')
+       }
     })
 
+    $(window).scroll(function(e){
+        var scrolltop = $(this).scrollTop()
+      
+       if(scrolltop > 300 && scrolltop < 1000){
+        $('.compt article').addClass('animated slideInRight delay-2s')
+    }else {
+        $('.compt article').removeClass('animated slideInRight delay-2s')
+    }
+     
     })
- 
 
 
+    $('.menu a').click(function(e){
+        e.preventDefault() 
+        var $link=$(this).attr('href')
+        pos = $($link).offset()
+        var scol= pos.top - 80
+    
+         $('body,html').animate({scrollTop:scol},600)
+       
+})
+$('.menu-icone').click(function(e){
+    e.preventDefault();
+    $this = $(this);
+    if($this.hasClass('is-open')){
+    $this.addClass('is-closed').removeClass('is-open');
+   }else {
+       $this.removeClass('is-closed').addClass('is-open');
+   }
 
- box = {
+    $('#sites span').slideToggle("slow");
 
-init: function(){
-  
-  
-    $(".zoom img").click(function(){
-    box.lien = ($(this).attr('src'));
+})
 
-     box.load()
-
-  
-  }); 
-$('#overlay').click(box.close)
-
-
-},
-
-close: function(){
-    $('#overlay').slideUp(function(){
-        $('#overlay img').remove()    
-        $('#photo span').removeClass('active')
-    })
-},
-
-load: function(){
-    var $taille = $(window).width()
-    pos = $('#stop').offset()
-    var scol= pos.top -100
-    if($taille > 800){
-     $('body,html').animate({scrollTop:scol},600)
-     $('#overlay').html('<span><img src='+box.lien+'></span>').slideDown()  
-}else {
-    return          
-}
-}
-
- }
-
+})

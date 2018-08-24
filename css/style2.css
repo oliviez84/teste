@@ -62,8 +62,10 @@ table {
   --font-text:'Roboto', sans-serif;
 }
 
-html, body {
-  font-family: var(--font-text);
+body, html {
+  margin: 0 auto;
+  font-family: var(--font-titre);
+  background: #222222;
 }
 
 .flex {
@@ -72,17 +74,24 @@ html, body {
   display: flex;
 }
 
-#page {
-  max-width: 1440px;
-  margin: 0 auto;
-  background: var(--fond);
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
 }
 
 .page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  height: 80vh;
-  background-image: url(/img/fond.png);
-  background-size: cover;
+  height: 100vh;
+  background-image: url(/img/fondor.png);
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -95,39 +104,28 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-}
-
-.titre-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 5vw;
+}
+
+.titre-header {
+  padding-top: 5%;
+  font-size: 4vw;
   color: var(--menu-text);
 }
 
 .sous_titre {
   font-size: 2vw;
-  text-align: center;
-  margin-left: 50%;
+  margin-left: 60%;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  top: 0;
   height: 70px;
-  left: 0%;
-  text-transform: uppercase;
   width: 100%;
-  padding: 0.5%;
   z-index: 900;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -137,8 +135,8 @@ html, body {
           align-items: center;
   -webkit-animation-duration: .5s;
           animation-duration: .5s;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
+  -webkit-animation-name: bounceInRight;
+          animation-name: bounceInRight;
 }
 
 .menu ul li {
@@ -149,6 +147,7 @@ html, body {
   margin: 20px;
   text-decoration: none;
   color: var(--menu-text);
+  font-size: 1.2rem;
 }
 
 .menu a:hover {
@@ -158,53 +157,12 @@ html, body {
 
 .menutop {
   position: fixed;
-  max-width: 1440px;
   left: auto;
   background: #F6CF68;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-top: -99px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-top: -99px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@-webkit-keyframes bounce {
-  from {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes bounce {
-  from {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  -webkit-animation-name: menushow;
+          animation-name: menushow;
 }
 
 .menu2 {
@@ -213,7 +171,32 @@ html, body {
   font-size: 2rem;
 }
 
-.about {
+@-webkit-keyframes menushow {
+  from {
+    margin-top: -99px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes menushow {
+  from {
+    margin-top: -99px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+.titre {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 5%;
+  color: var(--menu-hover);
+}
+
+.compt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,104 +209,63 @@ html, body {
       justify-content: space-around;
 }
 
+.compt .colon:hover {
+  border: 1px solid #B6393F;
+}
+
 .colon {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row wrap;
           flex-direction: row wrap;
-  min-width: calc(100% / 4);
+  min-width: calc(90% / 3);
   width: calc((800px - 100%) * 1000);
   max-width: 100%;
   padding: 2%;
-  line-height: 1.2rem;
+  line-height: 1.8rem;
+  border-radius: 5%;
+}
+
+.colon .fa {
+  color: var(--titre-h1);
+  width: 100%;
+  text-align: center;
 }
 
 .colon h2 {
   font-size: 1.4rem;
 }
 
-.colon li {
-  text-justify: inter-word;
+.colon p {
+  text-align: center;
 }
 
-.colon ul {
-  padding: 5px 0px 20px 0px;
-}
-
-.grid-zone-3 {
+.completences {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35%;
+  margin-bottom: 15%;
   color: var(--titre-text);
-  background: var(--menu-text);
-  width: 100%;
-  height: 600px;
-}
-
-#portfolio, .titre {
-  font-size: 3rem;
-  padding-bottom: 5%;
-  color: #F6CF68;
-  background: var(--menu-text);
-  padding-left: 5%;
-}
-
-.titres {
-  font-size: 1.8rem;
-  padding: 10% 0;
-  color: var(--titre-h1);
-}
-
-#sites {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: var(--bg-color);
-  /* margin-bottom: 1%; */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
   width: 100%;
 }
 
-.titre-site {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  font-size: 2rem;
-  padding: 5%;
-  font-size: 3rem;
-  padding: 10% 0;
-  color: var(--titre-h1);
+.titrecolon {
+  font-size: 1.5rem;
+  line-height: 5rem;
+  margin-bottom: 20px;
+  color: var(--menu-hover);
+  text-align: center;
 }
 
-.off {
-  display: none;
-  width: 100%;
+.about .fa {
+  color: blue;
 }
 
-.off img {
-  width: 100%;
-  padding: 10px;
+.moitier {
+  width: 60%;
 }
 
-h2 {
-  font-size: 1.5em;
-  /* text-align: center; */
+p {
+  color: #fff;
 }
-
-.fa {
-  color: var(--titre-h1);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */
