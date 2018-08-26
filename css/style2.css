@@ -196,6 +196,14 @@ body, html {
   color: var(--menu-hover);
 }
 
+.titre .qui {
+  background: red;
+}
+
+.qui {
+  margin-top: 15%;
+}
+
 .compt {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -109,9 +109,13 @@ body, html {
         text-align: center;
         padding-bottom: 2%;
         color: var(--menu-hover);
-       
+       .qui {
+        background: red;
+       }
       }
-     
+     .qui {
+        margin-top: 15%;
+       }
       .compt {
         display: flex;
         width: 100%;
