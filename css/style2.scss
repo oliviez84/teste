@@ -1,0 +1,218 @@
+@import "_reset-src.scss";
+
+
+:root {
+  --fond:#222222;
+ 
+  --menu-text:#222222;
+  --menu-hover:#B6393F;
+  --titre-text: #fff;
+  --titre-h1:#F6CF68;
+  --font-titre:'Raleway', sans-serif;
+  --font-text:'Roboto', sans-serif;
+}
+
+body, html {
+    // max-width: 1440px;
+    margin: 0 auto;
+    font-family:var(--font-titre);
+    background: #222222;
+}
+.flex {
+  display: flex;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+
+    height: 100vh;
+    
+}
+.page1 {
+      display: flex;
+        width: 100%;
+        height:100vh;
+        background-image: url(/img/fondor.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+      
+    }
+    .header {
+        display: flex;
+        width: 50%;
+          flex-flow: column;
+        align-items: center;
+      } 
+      .titre-header {
+        padding-top: 5%;
+        font-size: 4vw;
+        color: var(--menu-text);
+        // text-shadow: .055em .055em 0 #B6393F;
+        // mix-blend-mode: overlay;
+      }
+       .sous_titre {
+          font-size: 2vw;
+          margin-left: 60%;
+        }
+    .menu {
+       display: flex;
+        height: 70px;
+        width: 100%;
+        z-index: 900;
+        justify-content:flex-end;
+        align-items: center;
+        animation-duration: .5s;
+        animation-name: bounceInRight ; 
+    
+        ul li {
+            display: inline-block;
+        }
+        a {
+            margin: 20px;
+            text-decoration: none;
+            color: var(--menu-text);
+            font-size: 1.2rem;
+             
+        }
+        a:hover {
+            border-bottom: 1px solid #B6393F;
+            color: var(--menu-hover);
+        }
+       
+      }
+      .menutop {
+          position:fixed;
+          // max-width: 1440px;
+          left:auto;
+          background: #F6CF68;
+          animation-duration: 1s;
+          animation-name: menushow ; 
+    
+      }
+      .menu2 {
+        display:none;
+        width: 50%;
+        font-size: 2rem;
+      }
+
+
+    @keyframes menushow {
+        from { margin-top: -99px;}
+      
+        to { margin-top: 0;}
+      }
+    
+      ////////////////////// after header /////////////////////////////////////////////
+      .titre {
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 2%;
+        color: var(--menu-hover);
+       
+      }
+     
+      .compt {
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-bottom: 5%;
+
+        .colon:hover {
+          border: 1px solid #B6393F;
+       
+           }
+      }
+      
+      .colon {
+        flex-direction: row wrap;
+        min-width: calc(90% / 3) ;
+        width: calc((800px - 100%) * 1000);
+        max-width: 100%;
+        padding: 2%;
+        line-height: 1.8rem;
+     
+        border-radius: 5%;
+        .fa {
+          color: var(--titre-h1);
+          width: 100%;
+          text-align: center;
+        }
+        h2 {font-size: 1.4rem;}
+        p {text-align:center;}
+      
+      }
+      
+    
+      
+      .completences {
+        display: flex;
+        margin-bottom: 2%;
+        color: var(--titre-text);
+        width: 100%;
+      }
+    
+      .titrecolon {
+
+          font-size: 1.5rem;
+          line-height: 5rem;
+          margin-bottom: 20px;
+          color: var(--menu-hover);
+          text-align: center;
+      }
+  
+      .fa {
+       color: blue;
+     }
+
+.moitier-left{
+
+  width: 45%;
+
+}
+.moitier-right{
+
+  width: 25%;
+  p {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    line-height: 2rem;
+    align-items: center;
+
+  }
+}
+ p {
+    color: #fff;
+  }
+  
+  .about {
+    display: flex;
+    width: 100%;
+    // margin: 0 auto;
+    .colon2:hover {
+      border: 1px solid #B6393F;
+   
+       }
+    .colon2 {
+    flex-direction: row wrap;
+    min-width: calc(100% / 3 - 5%) ;
+    width: calc((800px - 100%) * 1000);
+    max-width: 100%;
+    padding: 2%;
+    margin: 2%;
+    line-height: 1.2rem;
+    border-radius: 5%;
+  
+    .fa {
+      color: var(--titre-h1);
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15%;
+    }
+    h2 {font-size: 1.4rem;}
+    li {text-align:center;}
+  
+  }
+  }
