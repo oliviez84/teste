@@ -107,7 +107,7 @@ body, html {
       .titre {
         font-size: 3rem;
         text-align: center;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
         color: var(--menu-hover);
        
       }
@@ -117,6 +117,8 @@ body, html {
         width: 100%;
         flex-flow: row wrap;
         justify-content: space-around;
+        margin-bottom: 5%;
+
         .colon:hover {
           border: 1px solid #B6393F;
        
@@ -146,7 +148,7 @@ body, html {
       
       .completences {
         display: flex;
-        margin-bottom: 15%;
+        margin-bottom: 2%;
         color: var(--titre-text);
         width: 100%;
       }
@@ -160,15 +162,57 @@ body, html {
           text-align: center;
       }
   
-     .about .fa {
+      .fa {
        color: blue;
      }
 
-.moitier{
+.moitier-left{
 
-  width: 60%;
- 
+  width: 45%;
+
+}
+.moitier-right{
+
+  width: 25%;
+  p {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    line-height: 2rem;
+    align-items: center;
+
+  }
 }
  p {
     color: #fff;
+  }
+  
+  .about {
+    display: flex;
+    width: 100%;
+    // margin: 0 auto;
+    .colon2:hover {
+      border: 1px solid #B6393F;
+   
+       }
+    .colon2 {
+    flex-direction: row wrap;
+    min-width: calc(100% / 3 - 5%) ;
+    width: calc((800px - 100%) * 1000);
+    max-width: 100%;
+    padding: 2%;
+    margin: 2%;
+    line-height: 1.2rem;
+    border-radius: 5%;
+  
+    .fa {
+      color: var(--titre-h1);
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15%;
+    }
+    h2 {font-size: 1.4rem;}
+    li {text-align:center;}
+  
+  }
   }

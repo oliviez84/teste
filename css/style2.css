@@ -192,7 +192,7 @@ body, html {
 .titre {
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   color: var(--menu-hover);
 }
 
@@ -207,6 +207,7 @@ body, html {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 5%;
 }
 
 .compt .colon:hover {
@@ -244,7 +245,7 @@ body, html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15%;
+  margin-bottom: 2%;
   color: var(--titre-text);
   width: 100%;
 }
@@ -257,15 +258,71 @@ body, html {
   text-align: center;
 }
 
-.about .fa {
+.fa {
   color: blue;
 }
 
-.moitier {
-  width: 60%;
+.moitier-left {
+  width: 45%;
+}
+
+.moitier-right {
+  width: 25%;
+}
+
+.moitier-right p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  line-height: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 p {
   color: #fff;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.about .colon2:hover {
+  border: 1px solid #B6393F;
+}
+
+.about .colon2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  min-width: calc(100% / 3 - 5%);
+  width: calc((800px - 100%) * 1000);
+  max-width: 100%;
+  padding: 2%;
+  margin: 2%;
+  line-height: 1.2rem;
+  border-radius: 5%;
+}
+
+.about .colon2 .fa {
+  color: var(--titre-h1);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.about .colon2 h2 {
+  font-size: 1.4rem;
+}
+
+.about .colon2 li {
+  text-align: center;
 }
 /*# sourceMappingURL=style2.css.map */
