@@ -74,16 +74,6 @@ body, html {
   display: flex;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: (1fr)[12];
-      grid-template-rows: repeat(12, 1fr);
-  height: 100vh;
-}
-
 .page1 {
   display: -webkit-box;
   display: -ms-flexbox;
