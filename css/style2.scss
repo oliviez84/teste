@@ -26,7 +26,7 @@ body, html {
       display: flex;
         width: 100%;
         height:100vh;
-        background-image: url(/img/fondor.png);
+        background-image: url(/img/fondx.png);
         background-size:contain;
         background-repeat: no-repeat;
       
@@ -50,7 +50,7 @@ body, html {
         }
     .menu {
        display: flex;
-        height: 70px;
+        height: 100px;
         width: 100%;
         z-index: 900;
         justify-content:flex-end;
@@ -76,6 +76,7 @@ body, html {
       }
       .menutop {
           position:fixed;
+          height: 70px;
           // max-width: 1440px;
           left:auto;
           background: #F6CF68;
