@@ -387,7 +387,7 @@ textarea {
 }
 
 .black {
-  color: var(--fond);
+  color: var(--titre-h1);
 }
 
 .grid {
