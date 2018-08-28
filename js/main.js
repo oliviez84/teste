@@ -1,6 +1,44 @@
 $(document).ready(function(){
 
+   
+      
 
+    $('#rea2 .owl-carousel').owlCarousel({
+    
+        items:2,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        // margin:30,
+        // stagePadding:30,
+        autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout:5000,
+        loop: true,
+        pagination: true,
+        dots: true,
+        smartSpeed:450,
+        nav: false,
+       points: false,
+       dotsEach: true
+    });
+    $('#rea .owl-carousel').owlCarousel({
+    
+        items:3,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        // margin:30,
+        // stagePadding:30,
+        autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout:5000,
+        loop: true,
+        pagination: true,
+        dots: true,
+        smartSpeed:450,
+        nav: false,
+       points: false,
+       dotsEach: true
+    });
     $('.owl-carousel').owlCarousel({
     
         items:1,
@@ -20,6 +58,8 @@ $(document).ready(function(){
        dotsEach: true
     });
 
+   
+   
     $(window).scroll(function(e){
         var scrolltop = $(this).scrollTop()
 
@@ -48,7 +88,7 @@ $(document).ready(function(){
         e.preventDefault() 
         var $link=$(this).attr('href')
         pos = $($link).offset()
-        var scol= pos.top - 80
+        var scol= pos.top -100
     
          $('body,html').animate({scrollTop:scol},600)
        
