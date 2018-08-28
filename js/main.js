@@ -88,7 +88,7 @@ $(document).ready(function(){
         e.preventDefault() 
         var $link=$(this).attr('href')
         pos = $($link).offset()
-        var scol= pos.top -100
+        var scol= pos.top -80
     
          $('body,html').animate({scrollTop:scol},600)
        
