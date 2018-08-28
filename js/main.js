@@ -74,8 +74,8 @@ $(document).ready(function(){
 
     $(window).scroll(function(e){
         var scrolltop = $(this).scrollTop()
-      
-       if(scrolltop > 300 && scrolltop < 1000){
+     
+       if(scrolltop > 1600 && scrolltop < 2000){
         $('.compt .colon').addClass('animated slideInRight delay-2s')
     }else {
         $('.compt .colon').removeClass('animated slideInRight delay-2s')
