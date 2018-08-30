@@ -23,7 +23,7 @@ $(document).ready(function(){
     });
     $('#rea .owl-carousel').owlCarousel({
     
-        items:3,
+        items:2,
         animateOut: 'slideOutDown',
         animateIn: 'flipInX',
         // margin:30,
