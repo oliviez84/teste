@@ -43,7 +43,7 @@
 
     // SI LES CHAMPS SONT MAL REMPLIS
     if ( (empty($nom)) && (empty($sujet)) && (empty($email)) && (!filter_var($email, FILTER_VALIDATE_EMAIL)) && (empty($message)) ) {
-        echo 'echec :( <br /><a href="index.html">Retour au formulaire</a>';
+        echo 'echec :( <br/><a href="index.html">Retour au formulaire</a>';
     } else {
         // ENCAPSULATION DES DONNEES 
         mail($destinataire, $objet, utf8_decode($contenu), $headers);
