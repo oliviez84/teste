@@ -76,9 +76,9 @@ $(document).ready(function(){
         var scrolltop = $(this).scrollTop()
      
        if(scrolltop > 1600 && scrolltop < 2600){
-        $('.compt .colon').addClass('animated slideInRight delay-2s')
+        $('.compt .colon').addClass('animated bounceInUp delay-2s')
     }else {
-        $('.compt .colon').removeClass('animated slideInRight delay-2s')
+        $('.compt .colon').removeClass('animated bounceInUp delay-2s')
     }
      
     })
