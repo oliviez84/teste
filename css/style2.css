@@ -356,16 +356,6 @@ label, input {
   width: 50%;
 }
 
-fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-}
-
 .validez {
   border: none;
   background: var(--menu-hover);
@@ -376,12 +366,8 @@ fieldset {
 textarea {
   resize: none;
   border-radius: 20px 20px 20px 0;
-}
-
-.txt {
-  width: 60%;
+  width: 50%;
   height: 10vh;
-  margin: auto;
 }
 
 .center {
