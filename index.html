@@ -286,7 +286,7 @@
            <h2> Email :</h2><p> oliviez84@gmail.com</p>
         </div>
     <div class="contact">
-        <form method="post"  class="center" netlify>  
+        <!-- <form method="post"  class="center" netlify>  
                 
         <div class="contact-moi black">
             <label>Nom: <input type="text" name="name" /></label> 
@@ -301,7 +301,29 @@
             <label>Message: <textarea name="message"></textarea></label>
         </fieldset>
             <input type="submit" value="Validez" class="validez">
-        </form>
+        </form> -->
+
+        <form name="contact" method="POST" netlify>
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+
     </div>
         </div>
         </div>
