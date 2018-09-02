@@ -75,7 +75,7 @@ $(document).ready(function(){
     $(window).scroll(function(e){
         var scrolltop = $(this).scrollTop()
      
-       if(scrolltop > 1600 && scrolltop < 2600){
+       if(scrolltop > 1200 && scrolltop < 1600){
         $('.compt .colon').addClass('animated bounceInUp delay-2s')
     }else {
         $('.compt .colon').removeClass('animated bounceInUp delay-2s')
