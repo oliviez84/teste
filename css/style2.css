@@ -59,7 +59,7 @@ table {
   --titre-text: #fff;
   --titre-h1:#F6CF68;
   --font-titre:'Raleway', sans-serif;
-  --font-text:'Roboto', sans-serif;
+ 
 }
 
 body, html {
@@ -393,11 +393,15 @@ textarea {
 }
 
 /* ---- grid-item ---- */
+.marg {
+  width: 100%;
+margin-left:2%;
+}
 .grid-item {
   width: 160px;
   height: 120px;
   float: left;
-  background: var(--menu-hover);
+  background: white;
   border: 2px solid #333;
   border-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -443,7 +447,7 @@ textarea {
 }
 
 .grid-item:hover {
-  background: var(--titre-h1);
+  /* background: var(--titre-h1); */
   border-color: white;
   cursor: pointer;
 }
@@ -469,4 +473,3 @@ textarea {
     display: none;
   }
 }
-/*# sourceMappingURL=style2.css.map */
