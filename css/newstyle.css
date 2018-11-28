@@ -71,18 +71,27 @@ justify-content: center;
   text-align: left;
 }
 .big_icones {
- font-size: 1.8rem;
- color: var(--fond_jaune);
-
-  padding: 10px;
+ width: 70px;
+ height: 70px;
 background: var(--fond_rouge);
-
+border-radius: 50%;
 
 }
-
-p{
-    /* text-align: justify; */
+.big_icones i{
+font-size: 1.8rem;
+background: var(--fond_noir);
+color:var(--fond_jaune);
+padding: 4px;
+border-radius: 5px;
 }
+.sitation{
+  font-size: 1.5rem;
+
+}
+.sitation i{
+  color: var(--fond_jaune);
+}
+
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -186,11 +195,16 @@ p{
     animation-duration: .5s;
     -webkit-animation-name: bounceInRight;
     animation-name: bounceInRight;
+   
   }
  
   
 
   
+  .menu a {
+     border-bottom: 1px solid transparent;
+   
+  }
   .menu a:hover {
     border-bottom: 1px solid #B6393F;
     color: var(--menu-hover);
@@ -318,3 +332,9 @@ p{
           max-width: 50%;
         }
       }
+      .form-control {
+      border: 1px solid var(--fond_rouge);
+      border-radius: 0;
+    
+    }
+ 
