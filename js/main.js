@@ -23,7 +23,7 @@ $(document).ready(function(){
         // e.preventDefault() 
         var $link=$(this).attr('href')
         pos = $($link).offset()
-        var scol= pos.top -80
+        var scol= pos.top -20
     
          $('body,html').animate({scrollTop:scol},600);
          console.log('boom')

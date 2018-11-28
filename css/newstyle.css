@@ -337,4 +337,14 @@ border-radius: 5px;
       border-radius: 0;
     
     }
+    .simon {
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+      background: url(/img/diplome/sim1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 200px;
+    }
  
