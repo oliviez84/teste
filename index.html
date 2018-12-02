@@ -11,14 +11,18 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat:600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/newstyle.css">
   <link rel="stylesheet" href="/css/animate.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+    <script src="/anim/lottie.js"></script>
   <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rufina:700" rel="stylesheet">
+  <script type="text/javascript" src="/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="/js/jquery.scrollTo-1.4.2-min.js"></script>
   <title>portfolio</title>
 </head>
 
@@ -43,7 +47,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav p-">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#page1">Accueil <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#compt">Compétences</a>
@@ -65,23 +69,17 @@
 
   <div class="">
 
-    <div class="header pt-5">
-      <div class="container"> 
-      <h1 class="header_titre pl-1 titre">Dumareau</h1>
-      <h1 class="header_titre pl-1 titre">Olivier</h1>
-    </div>
-</div>
-    <img src="/img/onde.png" alt="" style="width: 100%;">
+    <img src="/images/bande1.jpg" alt="" style="width: 100%;">
   </div>
 
   <main>
-    <article id="qui" class="bg_noir pb-5 pt-2">
+    <article id="qui" class="bg_noir pb-5 pt-2 abs">
       <div class="container pt-5">
- 
+       
         <h2 class="text-white pb-3 titre">QUI SUIS-JE ?</h2>
        
           <div class="d-flex align-items-center pt-4 pb-4">
-            <img src="/img/DSC_0096.png" alt="moi" style="width: 15%;">
+            <img src="/images/moi.png" alt="moi" style="width: 15%;">
             <p class="text-white p-5">Je suis autodidacte depuis toujours et<br>
               passionné de nouvelles technologies.<br>
               J'aime créer et me dépasser,
@@ -95,7 +93,9 @@
         
         </div>
       </div>
+       <!-- <div id="lottie"></div> -->
     </article>
+    
     <article id="compt" class="bg_gris pb-5 pt-5">
       <div class="container pt-5">
         <h2 class="text-white titre">MES COMPÉTENCES</h2>
@@ -153,28 +153,31 @@
         </div>
       </div>
     </article>
-    <article id="creation" class="bg_noir pb-5 pt-5">
+    <article id="creation" class="bg_noir pb-5 pt-5 abs">
       <div class="container pt-5">
         <h2 class="text-white pb-3 titre">MES CRÉATIONS</h2>
+        
         <div class="row p-5">
           <div class="col-md-6 ">
-            <img src="/img/mokup.png" alt="moi" style="width: 100%;position: absolute;top:-30px">
+            <img src="/images/mokup.png" alt="moi" style="width: 100%;position: absolute;top:-30px">
 
 
 
           </div>
           <div class="col-md-6 text-white my-auto mx-auto">
-            <p class="text-white p-5">Lorem ipsum dolor sit</p>
+            <p class="text-white p-4">Je vous invite à aller voir mes créations<br>en cliquant sur le lien ci-dessous.</p>
             <div class=" d-flex justify-content-center">
               <a href="creation.html" type="button" class="btn btn-secondary bg_gris">MES ILLUSTRATIONS</a>
             </div>
           </div>
         </div>
+      
       </div>
+       <div class="simon1"></div>
     </article>
     <article id="experiances" class="bg_gris pb-5 pt-5">
       <div class="container pt-5">
-        <h2 class="text-white titre">MES EXPÉRIENCES</h2>
+        <h2 class="text-white titre mt-4">MES EXPÉRIENCES</h2>
         <div class="row">
           <div class="col-md-6 p-5">
 
@@ -196,6 +199,7 @@
               </li>
 
             </ul>
+            <div class="simon2"></div>
           </div>
 
           <div class="col-md-6 p-5">
@@ -243,24 +247,26 @@
   </main>
   <div class="bg_noir pb-5">
 
-    <img src="/img/onde.png" alt="" class="w-100">
+    <img src="/images/onde.png" alt="" class="w-100">
     <div id="contact"></div>
     <div class="container pt-5">
       <h2 class="text-white pb-3 titre">ME CONTACTER</h2>
       <div class="row pt-5">
         <div class="col-md-6">
 
+ 
+          <div class="card bg_noir2  pt-5 p-5 h-100">
 
-          <div class="card bg_noir2  pt-5 h-100 p-5">
 
-
+          
             <p class="text_jaune">45 CHEMIN DE LA ROQUE</p>
             <p class="text_jaune">13160 CHATEAURENARD</p>
             <p class="text_jaune">06 43 58 36 44</p>
             <p class="text_jaune">oliviez84@gmail.com</p>
-             <div class="simon"></div>
-        </div>
-
+      
+           <div class="simon"></div>
+           
+</div>
         </div>
         <div class="col-md-6">
           <div class="card bg_noir2 text_jaune p-5 h-100">
@@ -300,7 +306,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="js/main.js"></script>
+  
 
+     <script>
+      var params = {
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        // animationData: animationData
+        path:'./anim/demo.json'
+    };
+
+    var anim;
+
+    anim = lottie.loadAnimation(params);
+
+
+
+</script>
 </body>
 
 </html>

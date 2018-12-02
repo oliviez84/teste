@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="lottie.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#fff;
+            margin: 0px;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #lottie{
+            background-color:#fff;
+            width:40%;
+            height:10%;
+            display:inline-block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+         ;
+        }
+        #lottie2{
+            background-color: #fff;
+            width:50%;
+            height:50%;
+            display:inline-block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+          
+      
+        }
+        #lottie3 {
+            background-color: rgb(133, 56, 56);
+            width:20%;
+            height:20%;
+            display:inline-block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+      
+        }
+
+    </style>
+</head>
+<body>
+    <div id="lottie"></div>
+    <div id="lottie2"></div>
+    <div id="lottie3"></div>
+   
+
+    <script>
+      var params = {
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        // animationData: animationData
+        path:'demo.json'
+    };
+
+    var anim;
+
+    anim = lottie.loadAnimation(params);
+
+
+      var params = {
+        container: document.getElementById('lottie2'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        // animationData: animationData
+        path:'demo.json'
+    };
+
+    var anim;
+
+    anim = lottie.loadAnimation(params); 
+      
+    var params = {
+        container: document.getElementById('lottie3'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        // animationData: animationData
+        path:'demo.json'
+    };
+
+    var anim;
+
+    anim = lottie.loadAnimation(params); 
+
+</script>
+ 
+</body>
+</html>
