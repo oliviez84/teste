@@ -78,7 +78,7 @@ html {
 .titre {
   border-left: 20px solid var(--fond_rouge);
   position: relative;
-  line-height: 20px;
+  /* line-height: 20px; */
   padding: 15px;
   list-style: none;
   text-align: left;
@@ -476,6 +476,12 @@ strong {
   .timeline {
     background: transparent;
     max-width: 50%;
+  }
+  .simon1, .simon2{
+    display: none
+  }
+  .simon{
+    display: none;
   }
 }
 

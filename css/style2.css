@@ -151,7 +151,6 @@ html {
 }
 
 
-
 .page1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,5 +437,8 @@ p {
 
   .menu {
     display: none;
+  }
+  h2{
+    font-size: 0.2rem!;
   }
 }
